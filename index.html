@@ -1,0 +1,60 @@
+<?php
+
+    session_start();
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bienvenidos -mmgalindo</title>
+	<link rel="stylesheet" href="icon/style.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial=scale=1.0, minimun-scale=1.0">
+
+</head>
+<body>
+
+	<header><span class="lnr lnr-menu show"></span>
+		<div class="contenedor-welcome">
+
+		<img src="img/LOGO.JPG" alt="" class="logo-welcome">
+		<h1 class="title-welcome">Bienvenido! 
+		<b> </b></h1>
+		<a href="cerrar.php" class="close-sesion">Cerrar Sesion</a>
+
+	</div>
+	</header>
+	<main>
+
+
+
+
+		<div class="content-menu">
+
+            
+            <li><span class="lnr lnr-home icon1"></span><h4 class="text1">Inicio</h4></li>
+            <li><span class="lnr lnr-film-play icon2"></span><h4 class="text2">Cursos</h4></li>
+            <li><span class="lnr lnr-store icon3"></span><h4 class="text3">Productos</h4></li>
+            <li><span class="lnr lnr-picture icon4"></span><h4 class="text4">Galeria</h4></li>
+            <li><span class="lnr lnr-briefcase icon5"></span><h4 class="text5">Foro</h4></li>
+            <li><span class="lnr lnr-license icon6"></span><h4 class="text6">Blog</h4></li>
+            <li><span class="lnr lnr-bubble icon7"></span><h4 class="text7">Mensajes</h4></li>
+            <li><span class="lnr lnr-envelope icon8"></span><h4 class="text8">Contactos</h4></li>
+            <li><span class="lnr lnr-question-circle icon9"></span><h4 class="text9">Nosotros</h4></li>
+            
+        </div>
+		
+		
+	</main>
+
+</body>
+</html>
